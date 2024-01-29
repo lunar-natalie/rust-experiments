@@ -13,3 +13,7 @@ fn test_sort<F>(f: F) where F: Fn(&mut [isize]) {
 fn test_bubble() {
     test_sort(|a| sort::bubble(a));
 }
+#[test]
+fn test_insertion() {
+    test_sort(|a| sort::insertion(a));
+}
