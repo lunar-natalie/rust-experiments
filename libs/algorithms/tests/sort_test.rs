@@ -17,3 +17,7 @@ fn test_bubble() {
 fn test_insertion() {
     test_sort(|a| sort::insertion(a));
 }
+#[test]
+fn test_merge() {
+    test_sort(|a| sort::merge(a));
+}
