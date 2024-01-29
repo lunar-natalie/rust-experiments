@@ -34,7 +34,6 @@ pub fn sort(arr: &mut [isize]) {
             }
         }
     }
-
     let mut vec = arr.to_vec();
     f(&mut vec);
     arr.clone_from_slice(vec.as_slice());
