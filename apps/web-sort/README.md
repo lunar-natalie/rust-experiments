@@ -1,12 +1,14 @@
 # web-sort
-A learning Rust web app, using [Leptos](https://leptos.dev)
 
-## how-to
+A web front end for sorting algorithms, using [Leptos](https://leptos.dev).
 
-Leptos uses [Trunk](https://trunkrs.dev) to build & bundle our Rust WASM web app
+## Usage
 
-1. [Install Rust](https://www.rust-lang.org/tools/install)
-2. Install Trunk using terminal: `cargo install trunk`
-3. Use Trunk to build & serve the web app: in the root `./web-sort` run `trunk serve --open`
+Leptos uses [Trunk](https://trunkrs.dev) to build & bundle our Rust WASM web app.
+
+Requires the nightly toolchain.
+
+1. Install Trunk: `cargo install trunk`
+2. Build & serve the web app: in the root `./web-sort` run `trunk serve --open`
 
 A browser will open, showing the page.
