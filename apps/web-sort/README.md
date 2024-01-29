@@ -9,6 +9,6 @@ Leptos uses [Trunk](https://trunkrs.dev) to build & bundle our Rust WASM web app
 Requires the nightly toolchain.
 
 1. Install Trunk: `cargo install trunk`
-2. Build & serve the web app: in the root `./web-sort` run `trunk serve --open`
+2. Build & serve the web app from the root `web-sort`: `trunk serve --open`
 
 A browser will open, showing the page.
