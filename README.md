@@ -1,5 +1,7 @@
 # rust-experiments
 
+![License](https://img.shields.io/github/license/lunar-natalie/rust-experiments)
+
 A collection of sample applications and libraries written in Rust.
 
 ## Usage
