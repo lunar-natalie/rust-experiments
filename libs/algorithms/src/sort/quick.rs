@@ -1,5 +1,7 @@
-pub fn sort(arr: &mut [isize]) {
-    fn f(arr: &mut [isize], left: usize, right: usize) {
+use crate::Sortable;
+
+pub fn sort(arr: &mut [impl Sortable]) {
+    fn f(arr: &mut [impl Sortable], left: usize, right: usize) {
         if left < right {
             let pivot = (|mut left: usize, mut right: usize| -> usize {
                 let pivot = arr[left];

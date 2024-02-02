@@ -1,4 +1,6 @@
-pub fn sort(arr: &mut [isize]) {
+use crate::Sortable;
+
+pub fn sort(arr: &mut [impl Sortable]) {
     let mut done = false;
     while !done {
         done = true;

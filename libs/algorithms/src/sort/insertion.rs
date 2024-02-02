@@ -1,4 +1,6 @@
-pub fn sort(arr: &mut [isize]) {
+use crate::Sortable;
+
+pub fn sort(arr: &mut [impl Sortable]) {
     for i in 1..arr.len() {
         let key = arr[i];
         let mut end = i;
@@ -10,17 +12,3 @@ pub fn sort(arr: &mut [isize]) {
         arr[end] = key;
     }
 }
-
-// This is what we'd have to do to adhere to OCR's implementation :/
-// pub fn sort(arr: &mut [isize]) {
-//     for i in 1..arr.len() {
-//         let key = arr[i];
-//         let mut end = (i - 1) as isize;
-//         while end >= 0 && arr[end as usize] > key {
-//             // Shift values left
-//             arr[(end + 1) as usize] = arr[end as usize];
-//             end -= 1;
-//         }
-//         arr[(end + 1) as usize] = key;
-//     }
-// }
