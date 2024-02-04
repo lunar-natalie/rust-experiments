@@ -1,7 +1,7 @@
 use crate::Sortable;
 
 pub fn sort(arr: &mut [impl Sortable]) {
-    fn f(vec: &mut Vec<impl Sortable>)  {
+    fn f(vec: &mut Vec<impl Sortable>) {
         if vec.len() > 1 {
             // Split into two partitions at midpoint
             let mid: usize = vec.len() / 2;

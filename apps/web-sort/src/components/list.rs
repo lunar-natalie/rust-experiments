@@ -27,12 +27,17 @@ pub fn List(initial_length: usize) -> impl IntoView {
     };
 
     let update_element = move |ev: Event, set_element: WriteSignal<DataType>| {
-        set_element(event_target_value(&ev)
-            .parse::<DataType>()
-            .unwrap_or_default());
+        set_element(
+            event_target_value(&ev)
+                .parse::<DataType>()
+                .unwrap_or_default(),
+        );
     };
 
-    let element_view = move |(id, (element, set_element)): (usize, (ReadSignal<DataType>, WriteSignal<DataType>))| {
+    let element_view = move |(id, (element, set_element)): (
+        usize,
+        (ReadSignal<DataType>, WriteSignal<DataType>),
+    )| {
         view! {
             <li>
                 <input

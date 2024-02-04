@@ -6,8 +6,12 @@ pub fn sort(arr: &mut [impl Sortable]) {
             let pivot = (|mut left: usize, mut right: usize| -> usize {
                 let pivot = arr[left];
                 while left < right {
-                    while arr[left] < pivot { left += 1; }
-                    while arr[right] > pivot { right -= 1; }
+                    while arr[left] < pivot {
+                        left += 1;
+                    }
+                    while arr[right] > pivot {
+                        right -= 1;
+                    }
                     arr.swap(left, right);
                 }
                 return left;
