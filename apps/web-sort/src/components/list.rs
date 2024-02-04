@@ -42,13 +42,11 @@ pub fn List(initial_length: usize) -> impl IntoView {
             <li>
                 <input
                     type="number"
-                    name={"Element ".to_owned() + &id.to_string()}
+                    name="Element ".to_owned() + &id.to_string()
                     on:input=move |ev| { update_element(ev, set_element) }
                     prop:value=element
                 />
-                <button on:click=move |_| { remove_element(id) }>
-                    Remove
-                </button>
+                <button on:click=move |_| { remove_element(id) }>Remove</button>
             </li>
         }
     };
@@ -57,11 +55,7 @@ pub fn List(initial_length: usize) -> impl IntoView {
         <div>
             <button on:click=add_element>"Add"</button>
             <ul>
-                <For
-                    each=elements
-                    key=|element| element.0
-                    children=element_view
-                />
+                <For each=elements key=|element| element.0 children=element_view/>
             </ul>
         </div>
     }

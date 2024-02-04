@@ -5,9 +5,7 @@ use components::*;
 
 #[component]
 fn App() -> impl IntoView {
-    view! {
-        <List initial_length=8/>
-    }
+    view! { <List initial_length=8/> }
 }
 
 fn main() {
