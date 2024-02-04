@@ -3,12 +3,12 @@ use std::fmt::Debug;
 use algorithms::sort;
 
 const DATA_I32: ([i32; 8], [i32; 8]) = (
-    [4, 2, 56, -1, 1, 0, 8, 9],
-    [-1, 0, 1, 2, 4, 8, 9, 56]);
+    [4, 2, 56, -16, 1, 0, 8, 9],
+    [-16, 0, 1, 2, 4, 8, 9, 56]);
 
 const DATA_F32: ([f32; 8], [f32; 8]) = (
-    [4.0, 2.0, 56.0, -1.0, 1.0, 0.0, 8.0, 9.0],
-    [-1.0, 0.0, 1.0, 2.0, 4.0, 8.0, 9.0, 56.0]);
+    [4.66, 56.1, 5.024, 1.0, -16.001, 0.0, 77.6, 9.0],
+    [-16.001, 0.0, 1.0, 4.66, 5.024, 9.0, 56.1, 77.6]);
 
 fn test_sort<Array, F>(data: (Array, Array), f: F) where Array: Clone + PartialEq + Debug, F: Fn(&mut Array) {
     let mut result = data.0.clone();
