@@ -1,6 +1,7 @@
 # rust-experiments
 
 ![License](https://img.shields.io/github/license/lunar-natalie/rust-experiments)
+![Build Status](https://img.shields.io/github/actions/workflow/status/lunar-natalie/rust-experiments/rust.yml)
 
 A collection of sample applications and libraries written in Rust.
 
