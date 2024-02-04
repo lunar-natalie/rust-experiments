@@ -16,7 +16,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     
-    - name: Setup
+    - name: Run setup.sh
       run: ${{ github.workspace }}/setup.sh
       
     - name: Build
