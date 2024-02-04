@@ -2,7 +2,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "rust: cargo test",
+            "label": "Setup Workspace",
+            "type": "shell",
+            "command": "${workspaceRoot}/setup.sh",
+            "problemMatcher": []
+        },
+        {
+            "label": "Run Tests",
             "type": "cargo",
             "command": "test",
             "problemMatcher": [
@@ -11,7 +17,7 @@
             "group": "test"
         },
         {
-            "label": "web-sort: serve",
+            "label": "Serve web-sort",
             "type": "shell",
             "command": "trunk serve",
             "options": {
