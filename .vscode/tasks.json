@@ -2,14 +2,22 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "web-sort",
-            "type": "shell",
-            "command": "cd apps/web-sort && trunk serve"
+            "label": "rust: cargo test",
+            "type": "cargo",
+            "command": "test",
+            "problemMatcher": [
+                "$rustc"
+            ],
+            "group": "test"
         },
         {
-            "label": "Run tests",
+            "label": "web-sort: serve",
             "type": "shell",
-            "command": "cargo -Z unstable-options -C libs/algorithms test"
+            "command": "cd ./apps/web-sort && trunk serve",
+            "problemMatcher": [
+                "$rustc-watch"
+            ],
+            "isBackground": true
         }
     ]
 }
