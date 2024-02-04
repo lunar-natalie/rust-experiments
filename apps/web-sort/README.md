@@ -2,13 +2,16 @@
 
 A web front end for sorting algorithms, using [Leptos](https://leptos.dev).
 
+## Prerequisites
+
+- Nightly toolchain
+- `wasm32-unknown-unknown` target
+- [Trunk](https://trunkrs.dev)
+
 ## Usage
 
-Leptos uses [Trunk](https://trunkrs.dev) to build & bundle our Rust WASM web app.
+[Trunk](https://trunkrs.dev) is used to build & bundle our Rust WASM web app.
 
-Requires the nightly toolchain.
+Build & serve the web app: from the project root, run `trunk serve`
 
-1. Install Trunk: `cargo install trunk`
-2. Build & serve the web app from the root `web-sort`: `trunk serve --open`
-
-A browser will open, showing the page.
+The web app should be running at [`localhost:8080`](http://localhost:8080)

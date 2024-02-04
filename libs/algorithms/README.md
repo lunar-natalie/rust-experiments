@@ -1,3 +1,7 @@
 # lib-algorithms
 
-Standard algorithms library for Rust with integration tests.
+Standard algorithms library with integration tests.
+
+## Prerequisites
+
+- Nightly toolchain
