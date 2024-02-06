@@ -1,4 +1,5 @@
 use leptos::*;
+use leptos::ev::Event;
 
 #[component]
 pub fn List(initial_length: usize) -> impl IntoView {
@@ -25,7 +26,7 @@ pub fn List(initial_length: usize) -> impl IntoView {
         });
     };
 
-    let update_element = move |ev: ev::Event, set_element: WriteSignal<DataType>| {
+    let update_element = move |ev: Event, set_element: WriteSignal<DataType>| {
         set_element(
             event_target_value(&ev)
                 .parse::<DataType>()
