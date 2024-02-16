@@ -2,13 +2,13 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Setup Workspace",
+            "label": "Setup workspace",
             "type": "shell",
             "command": "${workspaceRoot}/setup.sh",
             "problemMatcher": []
         },
         {
-            "label": "Run Tests",
+            "label": "Run tests",
             "type": "cargo",
             "command": "test",
             "problemMatcher": [
@@ -17,11 +17,11 @@
             "group": "test"
         },
         {
-            "label": "Serve web-sort",
+            "label": "Serve web_sort",
             "type": "shell",
             "command": "trunk serve",
             "options": {
-                "cwd": "${workspaceRoot}/apps/web-sort"
+                "cwd": "${workspaceRoot}/apps/web_sort"
             },
             "problemMatcher": [
                 "$rustc-watch"

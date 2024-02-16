@@ -1,9 +1,9 @@
 [package]
-name = "web-sort"
+name = "web_sort"
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-algorithms = { git = "https://github.com/lunar-natalie/rust-experiments.git" }
+#algorithms = { git = "https://github.com/lunar-natalie/rust-experiments.git" }
 console_error_panic_hook = "0.1.7"
 leptos = { version = "0.6.3", features = ["csr", "nightly"] }

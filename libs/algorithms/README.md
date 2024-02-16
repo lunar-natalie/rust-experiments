@@ -1,4 +1,4 @@
-# lib-algorithms
+# algorithms
 
 Standard algorithms library with integration tests.
 

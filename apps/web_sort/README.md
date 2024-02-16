@@ -1,4 +1,4 @@
-# web-sort
+# web_sort
 
 A web front end for sorting algorithms, using [Leptos](https://leptos.dev).
 

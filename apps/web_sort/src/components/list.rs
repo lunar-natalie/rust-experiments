@@ -1,5 +1,5 @@
 use leptos::*;
-use leptos::ev::Event;
+use leptos::ev::*;
 
 #[component]
 pub fn List(initial_length: usize) -> impl IntoView {

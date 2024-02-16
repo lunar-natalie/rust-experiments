@@ -1,0 +1,8 @@
+[package]
+name = "vnc_resolver"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+reqwest = "0.11.24"
+serde = "1.0.196"
